@@ -11,9 +11,6 @@
                                     } ?>';
     const result_array_id = '<?php echo $saved_island_id ?>';
     const history_id = '<?php echo $history_id ?>';
-    console.log('Hello')
-    console.log(result_array_id)
-    console.log(history_id)
 </script>
 <script src="./view/js/script.js"></script>
 

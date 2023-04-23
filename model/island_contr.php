@@ -22,7 +22,6 @@ class IslandContr extends Island
     public function saveIsland()
     {
 
-        // print_r($this->island_arr);
 
         if ($this->emptyInput() == false) {
             $error = 'Please enter valid input HII';

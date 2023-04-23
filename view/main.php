@@ -49,19 +49,13 @@
                 <button id='calculate' name="submit_button" type="submit">Calculate</button>
             </form>
             <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
-                <!-- <input type="hidden" id='history_id' name="history_id"> -->
-                <!-- <input type="hidden" id='history_array' name="hizstory_array"> -->
                 <?php
                 if (isset($saved_island_id)) { ?>
                     <input type="hidden" id='history_id' name="history_id" value="<?php echo ($saved_island_id) ?>">
                 <?php } else { ?>
                     <input type="hidden" id='history_id' name="history_id" value="-100">
                 <?php } ?>
-                <!-- 
-                <?php if ($qty_islands != $saved_island_id) { ?>
 
-                    <button id='history_button' name="history_button" type="submit">History</button>
-                <?php } ?> -->
                 <button id='history_button' name="history_button" type="submit">History</button>
             </form>
         </div>

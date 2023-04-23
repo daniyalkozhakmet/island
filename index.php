@@ -11,7 +11,7 @@ include('./model/island.php');
 include('./model/island_contr.php');
 include('./model/island_contr_without_const.php');
 
-
+//For previous island
 if (isset($_POST['history_button'])) {
     $island = new IslandContrWithoutConst($history_id);
     $previous_island = $island->getPreviousIsland();
@@ -20,6 +20,7 @@ if (isset($_POST['history_button'])) {
     $saved_island_id = $previous_island[0];
     $qty_islands = $island->qtyIsland()[0];
 }
+//Create new island
 if (!empty($island_arr) && !empty($island_sum)) {
     $island = new IslandContr($island_arr, $island_sum);
     $new_island = $island->saveIsland();
@@ -28,7 +29,6 @@ if (!empty($island_arr) && !empty($island_sum)) {
     $saved_island_id = $new_island[0];
     $history_id = $saved_island_id;
 }
-// }
 
 //Header
 include('./view/header.php');
