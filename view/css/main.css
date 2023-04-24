@@ -118,3 +118,34 @@ main {
   flex-direction: column;
   padding: 50px 0;
 }
+@media only screen and (max-width: 900px) {
+  body {
+    background-color: rgb(0, 103, 137);
+  }
+  .wrapper {
+    flex-direction: column-reverse;
+  }
+  .outer_wrapper {
+    justify-content: center;
+    width: 100%;
+  }
+  .box_wrapper {
+    width: 70%;
+  }
+  .btns {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .box {
+    width: 50px;
+    height: 50px;
+  }
+  .header {
+    font-size: 15px;
+    height: 100px;
+  }
+}
+
